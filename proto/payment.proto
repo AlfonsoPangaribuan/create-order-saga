@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package payment;
+
+option go_package = "create-order-saga/proto/payment;payment"; // Ganti dengan path yang sesuai
+
+service PaymentService {
+    rpc ProcessPayment(ProcessPaymentRequest) returns (ProcessPaymentResponse);
+    rpc RefundPayment(RefundPaymentRequest) returns (RefundPaymentResponse);
+}
+
+message ProcessPaymentRequest {
+    int64 order_id = 1;
+    double amount = 2;
+}
+
+message ProcessPaymentResponse {
+    string status = 1;
+}
+
+message RefundPaymentRequest {
+    int64 order_id = 1;
+}
+
+message RefundPaymentResponse {
+    string status = 1;
+}

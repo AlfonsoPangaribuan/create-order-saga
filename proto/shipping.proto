@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package shipping;
+
+option go_package = "create-order-saga/proto/shipping;shipping"; // Ganti dengan path yang sesuai
+
+service ShippingService {
+    rpc StartShipping(StartShippingRequest) returns (StartShippingResponse);
+    rpc CancelShipping(CancelShippingRequest) returns (CancelShippingResponse);
+}
+
+message StartShippingRequest {
+    int64 order_id = 1;
+}
+
+message StartShippingResponse {
+    string status = 1;
+}
+
+message CancelShippingRequest {
+    int64 order_id = 1;
+}
+
+message CancelShippingResponse {
+    string status = 1;
+}

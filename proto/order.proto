@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package order;
+
+option go_package = "create-order-saga/proto/order;order"; // Ganti dengan path yang sesuai
+
+service OrderService {
+    rpc CreateOrder(CreateOrderRequest) returns (CreateOrderResponse);
+    rpc CancelOrder(CancelOrderRequest) returns (CancelOrderResponse);
+}
+
+message CreateOrderRequest {
+    int64 user_id = 1;
+    repeated Item items = 2;
+}
+
+message CreateOrderResponse {
+    int64 order_id = 1;
+    string status = 2;
+}
+
+message CancelOrderRequest {
+    int64 order_id = 1;
+}
+
+message CancelOrderResponse {
+    string status = 1;
+}
+
+message Item {
+    string name = 1;
+    int32 quantity = 2;
+}
