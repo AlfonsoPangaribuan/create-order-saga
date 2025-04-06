@@ -1,8 +1,4 @@
-Siap! Berikut adalah satu file `README.md` utuh, lengkap, dan estetik berdasarkan isi dari PDF-mu:
 
----
-
-```markdown
 # 🧩 Create Order Saga with gRPC
 
 Selamat datang di proyek **Create Order Saga** menggunakan arsitektur **Microservices** dan komunikasi antar layanan dengan **gRPC**. Proyek ini dibangun sebagai bagian dari pemenuhan tugas mata kuliah *Pengembangan Web Lanjut (PWL)*.
