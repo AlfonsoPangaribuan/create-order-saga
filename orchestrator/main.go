@@ -25,7 +25,7 @@ func main() {
 	// Langkah 1: Panggil Order Service
 	orderResp, err := orderClient.CreateOrder(context.Background(), &orderpb.CreateOrderRequest{UserId: 1}) // Perbaikan di sini
 	if err != nil {
-		log.Fatalf("Error creating order: %v", err)
+		log.Fatalf("Canceling order.... Order canceled! ")
 	}
 
 	// Langkah 2: Panggil Payment Service
