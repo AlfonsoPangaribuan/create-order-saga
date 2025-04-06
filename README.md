@@ -1,20 +1,18 @@
 
 # 🧩 Create Order Saga with gRPC
 
-Selamat datang di proyek **Create Order Saga** menggunakan arsitektur **Microservices** dan komunikasi antar layanan dengan **gRPC**. Proyek ini dibangun sebagai bagian dari pemenuhan tugas mata kuliah *Pengembangan Web Lanjut (PWL)*.
+Selamat datang di tugas **Create Order Saga** menggunakan arsitektur **Microservices** dan komunikasi antar layanan dengan **gRPC**. tugas ini dibangun sebagai bagian dari pemenuhan tugas mata kuliah *Pengembangan Web Lanjut (PWL)*.
 
----
 
-## 📌 Deskripsi Proyek
+## 📌 Deskripsi tugas
 
-Proyek ini merupakan simulasi sistem pemesanan produk yang melibatkan beberapa layanan mikro seperti:
+tugas ini merupakan simulasi sistem pemesanan produk yang melibatkan beberapa layanan mikro seperti:
 - 🛒 **Order Service**: Bertugas mencatat dan memproses pemesanan.
 - 💳 **Payment Service**: Menangani proses pembayaran.
 - 🚚 **Shipping Service**: Mengelola pengiriman barang.
 
 Ketiga layanan saling berinteraksi menggunakan **gRPC** dan dikoordinasikan menggunakan pola **Saga Pattern** untuk menjaga konsistensi data dalam transaksi terdistribusi.
 
----
 
 ## 🧠 Dasar Teori
 
@@ -29,7 +27,6 @@ Pola manajemen transaksi terdistribusi yang membagi satu transaksi besar menjadi
 - **Choreography**: Komunikasi antar layanan tanpa orkestrator.
 - **Orchestration**: Komunikasi diatur oleh satu layanan pusat (orchestrator).
 
----
 
 ## 🧱 Arsitektur Sistem
 
@@ -44,7 +41,6 @@ graph TD
 - Komunikasi terjadi menggunakan gRPC antar service.
 - Order Service bertindak sebagai Orchestrator.
 
----
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -56,7 +52,7 @@ graph TD
 
 ---
 
-## 📁 Struktur Proyek
+## 📁 Struktur tugas
 
 ```
 create-order-saga/
@@ -75,9 +71,8 @@ create-order-saga/
 │   └── *.proto (jika dipusatkan)
 ```
 
----
 
-## 🚀 Cara Menjalankan Proyek
+## 🚀 Cara Menjalankan tugas
 
 ### 1. Clone Repository
 ```bash
@@ -91,23 +86,8 @@ npm install
 ```
 
 ### 3. Jalankan Setiap Service di Terminal Berbeda
-```bash
-# Terminal 1 - Order Service
-node order-service/server.js
-
-# Terminal 2 - Payment Service
-node payment-service/server.js
-
-# Terminal 3 - Shipping Service
-node shipping-service/server.js
-```
 
 ### 4. Jalankan Client
-```bash
-node client/client.js
-```
-
----
 
 ## 🧪 Contoh Output
 
@@ -120,15 +100,12 @@ Order Service: Order successfully created!
 
 ---
 
-## 🎯 Tujuan Proyek
+## 🎯 Tujuan tugas
 
 - Mengimplementasikan komunikasi antar microservices menggunakan gRPC.
 - Mengaplikasikan konsep Saga Pattern untuk menjaga konsistensi data.
 - Membangun sistem pemesanan sederhana berbasis Node.js.
 
----
-
-## ✍️ Kontributor
 
 👤 **Alfonso Pangaribuan**  
 📚 NIM: 122140206  
