@@ -50,11 +50,9 @@ graph TD
 
 | Teknologi | Deskripsi |
 |-----------|-----------|
-| Node.js   | Runtime untuk membangun aplikasi backend |
+| go   | Runtime untuk membangun aplikasi backend |
 | gRPC      | Komunikasi antar service |
 | Protocol Buffers | Format serialization untuk definisi layanan |
-| JavaScript | Bahasa pemrograman utama |
-| Postman | Pengujian endpoint gRPC |
 
 ---
 
